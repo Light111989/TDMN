@@ -1,0 +1,18 @@
+$etm-header-text-color: #724289;
+
+.app-header-logo {
+  color: $etm-header-text-color;
+  background: url('images/app/et_logo_small.png') no-repeat center center;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  margin-top: -6px;
+}
+
+.app-header-title {
+  padding: 5px 0 5px 0;
+  color: $etm-header-text-color;
+  font-size: 18px;
+  font-weight: bold;
+}
