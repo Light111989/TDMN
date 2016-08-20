@@ -12,6 +12,11 @@ translations = {
     cancel: "Hủy",
     submit: "Nộp Lên",
     logout: 'Đăng Xuất',
+    /**
+     *
+     */
+    //search: 'Tìm Kiếm',
+    
     capsLockTitle: 'Caps Lock đang bật',
     capsLockMsg1: 'Bật Cap Lock có thể sẽ làm bạn ',
     capsLockMsg2: 'đánh sai mật khẩu.',
@@ -66,5 +71,9 @@ translations = {
     roombtnmnu_checkin: 'Nhận Phòng',
     roombtnmnu_checkout: 'Trả Phòng',
     roombtnmnu_clean: 'Dọn Phòng',
-    roombtnmnu_maintain: 'Bảo Trì'
+    roombtnmnu_maintain: 'Bảo Trì',
+    m_product: 'Hàng Hóa',
+    m_clients: 'Khách Hàng',
+    m_clients_general_info: 'Thông Tin Khách Hàng'
+
 };

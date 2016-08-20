@@ -1,6 +1,5 @@
 .idea
 node_modules
-client/.sencha
 client/build
 client/ext
 client/sass/example/bootstrap.*

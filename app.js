@@ -42,10 +42,10 @@ app.use(express.static(path.join(__dirname, 'client'), {index: false}));
 var mysql = require('mysql');
 var db = mysql.createPool({
     connectionLimit: 10,
-    host: '116.193.77.72',
-    user: 'bb55689_etm',
-    password: 'Lollipop!@#',
-    database: 'bb55689_etm'
+    host: '127.0.0.1',
+    user: 'root',
+    password: '123456',
+    database: 'tdmdb'
 });
 passport.use(new LocalStrategy(
     function (username, password, done) {

@@ -12,6 +12,10 @@ translations = {
     cancel: "Cancel",
     submit: "Submit",
     logout: 'Logout',
+    /**
+     *
+     */
+    search: 'Search',
     capsLockTitle: 'Caps Lock is On',
     capsLockMsg1: 'Having Caps Lock on may cause you to ',
     capsLockMsg2: 'enter your password incorrectly.',
@@ -66,5 +70,8 @@ translations = {
     roombtnmnu_checkin: 'Check-In',
     roombtnmnu_checkout: 'Check-Out',
     roombtnmnu_clean: 'Clean',
-    roombtnmnu_maintain: 'Maintain'
+    roombtnmnu_maintain: 'Maintain',
+    m_product: 'Product',
+    m_clients: 'Clients',
+    m_clients_general_info: 'Clients Information'
 };

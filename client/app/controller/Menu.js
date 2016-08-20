@@ -7,7 +7,9 @@ Ext.define('ETM.controller.Menu', {
     extend: 'Ext.app.Controller',
     requires: [
         'ETM.store.Menu',
-        'ETM.view.menu.Tree'
+        'ETM.view.menu.Tree',
+        'ETM.view.client.Form',
+        'ETM.view.product.Form'
     ],
     init: function () {
         console.log('Initialized Menu Controller! This happens before ' +
@@ -15,10 +17,10 @@ Ext.define('ETM.controller.Menu', {
     },
     stores: ['Menu'],
     control: {
-        'menutree#mainMenu': {
+        'menutree': {
             itemclick: 'onTreePanelItemClick'
         },
-        'mainmenu#mainMenu': {
+        'mainmenu': {
             render: 'renderDynamicMenu'
         }
     },

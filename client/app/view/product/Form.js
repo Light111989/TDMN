@@ -1,17 +1,15 @@
 /**
- * Created by hemet-pc on 8/3/2016.
- * This is the containing Form for Clients Listing Feature
+ * Created by Lighter on 8/20/2016.
  */
-Ext.define('ETM.view.client.Form', {
+Ext.define('ETM.view.product.Form', {
     extend: 'Ext.form.Panel',
     requires: [
         'Ext.form.RadioGroup',
         'Ext.form.field.Date',
         'Ext.button.Button',
-        'ETM.util.Spin',
-        'ETM.view.client.Grid'
+        'ETM.util.Spin'
     ],
-    xtype: 'frm-client',
+    xtype: 'frm-product',
     title: 'CLIENTS',
     layout: 'fit',
     session: true,
@@ -61,10 +59,4 @@ Ext.define('ETM.view.client.Form', {
             iconCls: 'fa fa-remove'
         }]
     }],
-    // @TODO - ask reference
-     items: [{
-            xtype: 'grd-client',
-            //reference: 'grdClient',
-           // bind: '{clientStore}'
-        }]
 });

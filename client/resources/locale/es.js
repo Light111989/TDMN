@@ -12,6 +12,10 @@ translations = {
     cancel: "Cancelar",
     submit: "Enviar",
     logout: 'Cerrar',
+    /**
+     *
+     */
+    search: 'Search',
     capsLockTitle: 'Bloq Mayús está Activado',
     capsLockMsg1: 'Tener el Bloq Mayús activado puede causar que ',
     capsLockMsg2: 'introduzca su contraseña de forma incorrecta.',
@@ -66,5 +70,8 @@ translations = {
     roombtnmnu_checkin: 'Registrarse',
     roombtnmnu_checkout: 'Revisa',
     roombtnmnu_clean: 'Limpiar',
-    roombtnmnu_maintain: 'Mantener'
+    roombtnmnu_maintain: 'Mantener',
+    m_product: 'Product',
+    m_clients: 'Clients',
+    m_clients_general_info: 'Clients Information'
 };
