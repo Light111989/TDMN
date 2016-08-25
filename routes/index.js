@@ -5,7 +5,7 @@ var express = require('express');
 var moment = require('moment');
 var router = express.Router();
 var async = require('async');
-
+var util = require('./../util');
 /**
  * File-Upload declaration
  */
@@ -92,6 +92,26 @@ module.exports = function (passport, db) {
                 }
                 res.send({data: menus});
             });
+    });
+    router.get('/client/read', isAuthenticated, function (req, res) {
+        util.callSp({
+            name: 'sp_clients_list',
+            params: ['searchText'],
+            data: req.query
+        }, db, function (err, data) {
+            if (err) res.send({success: false, msg: err.message});
+            else res.send({data: data[0]});
+        });
+    });
+    router.post('/client/update', isAuthenticated, function (req, res) {
+        util.callSp({
+            name: 'sp_clients_update',
+            params: ['client_id', 'client_code', 'client_name', 'client_tax_code', 'client_invoice_addr', 'client_delivery_addr', 'client_tel', 'client_email','client_account','client_bank','client_note'],
+            data: JSON.parse(req.body.data)[0]
+        }, db, function (err) {
+            if (err) res.send({success: false, msg: err.message});
+            else res.send({success: true});
+        });
     });
     router.get('/allmenus', isAuthenticated, function (req, res) {
         db.query('SELECT * FROM menus',

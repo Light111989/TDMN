@@ -30,35 +30,35 @@ Ext.define('ETM.view.client.Grid',{
         xtype: 'rownumberer',
         width: 20
     }, {
-        text: 'Code',
+        text: translations.code,
         dataIndex: 'client_code',
         filter: {
             type: 'string'
         },
         width: 80
     }, {
-        text: 'Name',
+        text: translations.name,
         dataIndex: 'client_name',
         filter: {
             type: 'string'
         },
         width: 300
     }, {
-        text: 'Tax Code',
+        text: translations.tax,
         dataIndex: 'client_tax_code',
         filter: {
             type: 'string'
         },
         width: 100
     }, {
-        text: 'Invoice Address',
+        text: translations.invoice,
         dataIndex: 'client_invoice_addr',
         filter: {
             type: 'string'
         },
         width: 300
     }, {
-        text: 'Delivery Address',
+        text: translations.delivery,
         dataIndex: 'client_delivery_addr',
         filter: {
             type: 'string'
@@ -72,8 +72,29 @@ Ext.define('ETM.view.client.Grid',{
         },
         width: 115
     }, {
-        text: 'Fax',
-        dataIndex: 'client_fax',
+        text: 'Email',
+        dataIndex: 'client_email',
+        filter: {
+            type: 'string'
+        },
+        width: 220
+    }, {
+        text: translations.account,
+        dataIndex: 'client_account',
+        filter: {
+            type: 'string'
+        },
+        width: 115
+    }, {
+        text: translations.bank,
+        dataIndex: 'client_bank',
+        filter: {
+            type: 'string'
+        },
+        width: 115
+    }, {
+        text: translations.note,
+        dataIndex: 'client_note',
         filter: {
             type: 'string'
         },

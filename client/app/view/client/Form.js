@@ -1,4 +1,7 @@
 /**
+ * Created by Lighter on 23/08/2016.
+ */
+/**
  * Created by hemet-pc on 8/3/2016.
  * This is the containing Form for Clients Listing Feature
  */
@@ -9,14 +12,16 @@ Ext.define('ETM.view.client.Form', {
         'Ext.form.field.Date',
         'Ext.button.Button',
         'ETM.util.Spin',
-        'ETM.view.client.Grid'
+        'ETM.view.client.Grid',
+        'ETM.view.client.Controller',
+        'ETM.view.client.Model'
     ],
     xtype: 'frm-client',
     title: 'CLIENTS',
     layout: 'fit',
     session: true,
-    //controller: 'client',
-    //viewModel: 'client',
+    controller: 'client',
+    viewModel: 'client',
     dockedItems: [{
         xtype: 'toolbar',
         ui: 'footer',
@@ -32,7 +37,7 @@ Ext.define('ETM.view.client.Form', {
         }, {
             xtype: 'button',
             width: 100,
-            text: 'Search',
+            text: translations.search,
             ico: 'fa fa-search',
             plugins: ['spin']
         }, {
@@ -64,7 +69,7 @@ Ext.define('ETM.view.client.Form', {
     // @TODO - ask reference
      items: [{
             xtype: 'grd-client',
-            //reference: 'grdClient',
-           // bind: '{clientStore}'
+            reference: 'grdClient',
+            bind: '{clientStore}'
         }]
 });

@@ -9,7 +9,8 @@ Ext.define('ETM.controller.Menu', {
         'ETM.store.Menu',
         'ETM.view.menu.Tree',
         'ETM.view.client.Form',
-        'ETM.view.product.Form'
+        'ETM.view.product.Form',
+        'Ext.data.validator.Format'
     ],
     init: function () {
         console.log('Initialized Menu Controller! This happens before ' +
